@@ -10479,7 +10479,7 @@ On doit pouvoir dire &quot;ClasseA est un ClasseB&quot;. Par exemple :
 
 Pour que la classe fille puisse appeler des fonctions de la classe mère, on ne peut pas utiliser [[private]]. Nous devrons donc les définir en [[protected]].</pre>
 </div>
-<div created="20190222204451197" modified="20190529130953134" tags="log" title="log" type="text/vnd.tiddlywiki">
+<div created="20190222204451197" modified="20190529133416510" tags="log" title="log" type="text/vnd.tiddlywiki">
 <pre>!!! Mercredi 29 Mai 2019
 
 En JS, this fait référence au contexte global.
@@ -10525,7 +10525,10 @@ for (var i = 0; i &lt; links.length; i++) {
 
 ```
 
-Notion de [[propagation]] : quand on clique sur un lien (par exemple), on va d'abord déclencher l'évènement qui est sur le lien, puis on déclenchera le lien qui est sur le parent, puis sur le parent du parent, etc.
+Notion de [[propagation]] : quand on clique sur un lien (par exemple), on va d'abord déclencher l'évènement qui est sur le lien, puis on déclenchera le lien qui est sur le parent, puis sur le parent du parent, etc. On peut stopper ce comportement à l'aide d'un e.stopPropagation();
+
+target/currentTarget
+Utiliser les breakpoints
 
 !!! Mardi 28 Mai 2019
 
