@@ -46,7 +46,7 @@ CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
 OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE." />
 <link id="faviconLink" rel="shortcut icon" href="favicon.ico">
-<title>JS — Mes notes sur Javascript</title>
+<title>React — Mes notes sur React</title>
 <!--~~ This is a Tiddlywiki file. The points of interest in the file are marked with this pattern ~~--><!--~~ Raw markup ~~-->
 
 
@@ -178,6 +178,8 @@ Error message and password prompt
 <li>$:/state/plugin-info--1893909122-$:/plugins/tiddlywiki/highlight---1375639774</li>
 
 <li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1963855381</li>
 
 <li>$:/state/tab-1749438307</li>
 
@@ -382,6 +384,8 @@ Error message and password prompt
 <li>Draft of 'New Tiddler'</li>
 
 <li>log</li>
+
+<li>ReactDOM.render()</li>
 
 </ul>
 </p>
@@ -9362,11 +9366,11 @@ Error message and password prompt
     }
 }</pre>
 </div>
-<div created="20190222204255277" modified="20190318115735761" title="$:/SiteSubtitle">
-<pre>Mes notes sur Javascript</pre>
+<div created="20190222204255277" modified="20190605215302806" title="$:/SiteSubtitle">
+<pre>Mes notes sur React</pre>
 </div>
-<div created="20190222204252229" modified="20190318115732722" title="$:/SiteTitle">
-<pre>JS</pre>
+<div created="20190222204252229" modified="20190605215258775" title="$:/SiteTitle">
+<pre>React</pre>
 </div>
 <div created="20190222221443192" modified="20190222221445565" title="$:/state/folded/attributs">
 <pre>show</pre>
@@ -9389,13 +9393,16 @@ Error message and password prompt
 <div created="20190222221423422" modified="20190524121440194" title="$:/state/sidebar">
 <pre>yes</pre>
 </div>
-<div created="20190224122313283" modified="20190524121329692" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Appearance</pre>
+<div created="20190605215251038" modified="20190605215251038" title="$:/state/tab--1963855381">
+<pre>$:/core/ui/ControlPanel/StoryView</pre>
+</div>
+<div created="20190224122313283" modified="20190605215255740" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Info</pre>
 </div>
 <div created="20190222204244792" modified="20190524121445448" title="$:/state/tab/sidebar--595412856">
 <pre>$:/core/ui/SideBar/Tools</pre>
 </div>
-<div list="log" title="$:/StoryList">
+<div created="20190605215248769" list="log ReactDOM.render()" modified="20190605215407081" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20190224122757742" modified="20190224122808808" title="$:/tags/Stylesheet">
@@ -10340,7 +10347,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div created="20190522192330936" draft.of="New Tiddler" draft.title="" modified="20190522192333262" tags="" title="Draft of 'New Tiddler'">
 <pre></pre>
 </div>
-<div created="20190530120407251" modified="20190605213920002" title="log">
+<div created="20190530120407251" modified="20190605215400682" title="log">
 <pre>!! Mercredi 5 Juin 2019
 
 Je suis le [[bootcamp de Tyler McGinnis sur YT|https://www.youtube.com/watch?v=8GXXGJRDMdQ]].
@@ -10360,7 +10367,7 @@ const headerElement = React.createElement(
 ```
 
 Dans le cas présent, on __crée un objet qui représente un noeud du DOM__.
-Grâce à ReactDOM, on peut rendre cet élément de la manière suivante :
+Grâce à [[ReactDOM]], on peut [[rendre|ReactDOM.render()]] cet élément de la manière suivante :
 
 ```javascript
 
@@ -10386,6 +10393,13 @@ D'abord l'installation :
 
 Puis la création de notre app dans le dossier de notre choix :
 `create-react-app nom_de_lapp`</pre>
+</div>
+<div created="20190605215411053" modified="20190605215432675" title="ReactDOM.render()">
+<pre>```javascript
+
+ReactDOM.render(element, container[, callback])
+
+```</pre>
 </div>
 
 </div>
